@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bground"
+    tools:context="com.octopus.kinoman_.SelectModeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imButtonBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/im_button_back" />
+
+        <com.octopus.kinoman_.HeadersTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ВЫБЕРИ РЕЖИМ"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="40sp"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorText"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp">
+
+        <Button
+            android:id="@+id/buttonHeroMode"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_weight="1"
+            android:background="@drawable/im_button_option"
+            android:onClick="onClick"
+            android:gravity="bottom|center"
+            android:textSize="25dp"
+            android:layout_gravity="bottom"
+            android:lineSpacingMultiplier="1.1"
+            android:text="Какой ты \nгерой?\n" />
+
+
+        <Button
+            android:id="@+id/buttonFilmMode"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_weight="1"
+            android:background="@drawable/im_button_option"
+            android:gravity="bottom|center"
+            android:onClick="onClick"
+            android:textSize="25dp"
+            android:text="Узнай фильм\n"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

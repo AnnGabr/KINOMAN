@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.octopus.kinoman_">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/image_disc"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FilmCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
